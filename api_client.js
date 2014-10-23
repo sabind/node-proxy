@@ -1,7 +1,7 @@
 var SuperAgent = require('superagent'),
   config = require("./config.js");
 
-var api_url = 'https://' + config.get('some_api').url;
+var api_url = config.get('some_api').url;
 
 var authentication_64_encode = new Buffer(config.get('some_api').username + ':' + config.get('some_api').password).toString('base64')
 

@@ -4,7 +4,7 @@
     "url": "http://localhost"
   },
   "some_api": {
-    "url": "server.api",
+    "url": "http://server.api",
     "username": "username",
     "password": "password"
   }
