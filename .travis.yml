@@ -5,17 +5,17 @@ node_js:
 
 before_install:
   - echo "Before Install"
-  - npm install
+  - export NODE_ENV=development
 
 script:
   - npm test
 
 script:
-  - NODE_ENV=development node test/fake_json_api.js &
+  - node test/fake_json_api.js &
   - npm test-functional-json
 
 script:
-  - NODE_ENV=development node test/fake_xml_api.js &
+  - node test/fake_xml_api.js &
   - npm test-functional-xml
 
 after_success:
