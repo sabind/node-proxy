@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - "0.11"
+  - "0.10"
+
+before_install:
+  - echo "Before Install"
+  - npm install
+
+script:
+  - npm test
+
+script:
+  - NODE_ENV=development node test/fake_json_api.js &
+  - npm test-functional-json
+
+script:
+  - NODE_ENV=development node test/fake_xml_api.js &
+  - npm test-functional-xml
+
+after_success:
+  - echo "DONE and SUCCESS!"
