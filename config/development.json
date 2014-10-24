@@ -1,8 +1,4 @@
 {
-  "server": {
-    "port": 3000,
-    "url": "http://localhost"
-  },
   "some_api": {
     "url": "http://server.api",
     "username": "username",

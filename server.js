@@ -1,6 +1,5 @@
 var http = require("http"),
   url = require("url"),
-  port = 3000,
   api_client = require("./api_client.js");
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
@@ -23,4 +22,4 @@ http.createServer(function (request, response) {
     }
   );
 
-}).listen(parseInt(port, 10));
+}).listen(process.env.PORT, process.env.IP);
