@@ -13,8 +13,8 @@ http.createServer(function (request, response) {
 	    'Access-Control-Allow-Headers': '*'
     }
     
-    res.writeHead(200, cors_headers);
-		res.end();
+    response.writeHead(200, cors_headers);
+		response.end();
 		return;
   } else {
     var uri = url.parse(request.url).pathname;
