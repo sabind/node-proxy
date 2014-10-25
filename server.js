@@ -5,7 +5,7 @@ var http = require("http"),
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 http.createServer(function (request, response) {
-  if (request.method == 'OPTION') {
+  if (request.method == 'OPTIONS') {
     var cors_headers = {
       'Access-Control-Allow-Origin': '*',
 	    'Access-Control-Request-Method': '*',
