@@ -9,13 +9,13 @@ http.createServer(function (request, response) {
 
   var headers = {
     'Content-Type': 'application/json'
-  }
+  };
   
   // Check header for X-Request-For so we know what API to call, for now we call only one API
-  api_client.get_api(uri,
-    function (response) {
-      response.writeHead(response.code, headers);
-      response.write(response.text, "utf8");
+  api_client.get_api(uri, headers,
+    function (proxy_response) {
+      response.writeHead(proxy_response.status, proxy_response.headers);
+      response.write(proxy_response.text, "utf8");
       response.end();
     },
     function (details) {

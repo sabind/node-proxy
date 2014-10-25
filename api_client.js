@@ -4,7 +4,7 @@ var SuperAgent = require('superagent'),
 var api_url = config.get('some_api').url;
 var authentication_64_encode = new Buffer(config.get('some_api').username + ':' + config.get('some_api').password).toString('base64')
 
-function get_api(url, callback, error_callback) {
+function get_api(url, headers, callback, error_callback) {
   SuperAgent
     .get(api_url + url)
     .set('Accept', 'application/json')
@@ -21,7 +21,7 @@ function get_api(url, callback, error_callback) {
     });
 }
 
-function put_api(url, callback, error_callback) {
+function put_api(url, headers, callback, error_callback) {
   SuperAgent
     .get(api_url + url)
     .set('Accept', 'application/json')
@@ -38,7 +38,7 @@ function put_api(url, callback, error_callback) {
     });
 }
 
-function post_api(url, callback, error_callback) {
+function post_api(url, headers, callback, error_callback) {
   SuperAgent
     .get(api_url + url)
     .set('Accept', 'application/json')
@@ -55,7 +55,7 @@ function post_api(url, callback, error_callback) {
     });
 }
 
-function delete_api(url, callback, error_callback) {
+function delete_api(url, headers, callback, error_callback) {
   SuperAgent
     .get(api_url + url)
     .set('Accept', 'application/json')
