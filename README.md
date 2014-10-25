@@ -4,4 +4,4 @@ A node proxy
 
 To run the proxy:
 
-```NODE_ENV=development IP=127.0.0.1 PORT=3000 node server.js```
+```NODE_ENV=development IP=localhost PORT=3000 node server.js```
