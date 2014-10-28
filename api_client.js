@@ -12,7 +12,7 @@ function get_api(url, headers, callback, error_callback) {
     .set('Authorization', 'Basic ' + authentication_64_encode)
     .end(function (error, response) {
       if (response) {
-        console.log('RESPONSE: ',response);
+        console.log('RESPONSE for: ' + url, response.text);
         callback(response)
       } else {
         console.log('UNKNOWN ERROR');
