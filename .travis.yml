@@ -12,11 +12,11 @@ script:
 
 script:
   - node test/fake_json_api.js &
-  - npm test-functional-json
+  - mocha test/json/*Spec.js
 
 script:
   - node test/fake_xml_api.js &
-  - npm test-functional-xml
+  - mocha test/xml/*Spec.js
 
 after_success:
   - echo "DONE and SUCCESS!"

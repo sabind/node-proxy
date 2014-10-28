@@ -7,9 +7,14 @@
     "nconf": "^0.6.9",
     "superagent": "^0.18.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^2.0.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
+    "test-functional-json": "mocha test/json/*.spec.js",
+    "test-functional-xml": "mocha test/xml/*.spec.js",
     "start": "node server.js"
   },
   "author": "",
