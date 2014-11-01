@@ -10,7 +10,7 @@ http.createServer(function (request, response) {
 
   response.writeHead(200, headers);
   response.write(
-    '<root><hello>World</hello></root>'
+    '<root><hello>World</hello><method>' + request.method + '</method></root>'
   , 'utf8');
   response.end();
 }).listen(3002, 'localhost');

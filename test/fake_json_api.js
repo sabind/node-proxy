@@ -10,7 +10,8 @@ http.createServer(function (request, response) {
 
   response.writeHead(200, headers);
   response.write(JSON.stringify({
-      "Hello":"World"
+      "Hello":"World",
+      "Method": request.method
     }), 'utf8');
   response.end();
 }).listen(3001, 'localhost');
