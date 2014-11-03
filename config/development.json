@@ -1,35 +1,37 @@
 {
-  "some_api": {
-    "cors_headers": {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Request-Method": "*",
-      "Access-Control-Allow-Methods": "OPTIONS, GET, PUT, POST, DELETE",
-      "Access-Control-Allow-Headers": "*"
+  "api_list": {
+    "some_api": {
+      "cors_headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Request-Method": "*",
+        "Access-Control-Allow-Methods": "OPTIONS, GET, PUT, POST, DELETE",
+        "Access-Control-Allow-Headers": "*"
+      },
+      "url": "https://api.macserver.theviewahead.com:8443",
+      "username": "adamp",
+      "password": "adamp"
     },
-    "url": "https://api.macserver.theviewahead.com:8443",
-    "username": "adamp",
-    "password": "adamp"
-  },
-  "json_test_api": {
-    "cors_headers": {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Request-Method": "*",
-      "Access-Control-Allow-Methods": "OPTIONS, GET, PUT, POST, DELETE",
-      "Access-Control-Allow-Headers": "*"
+    "json_test_api": {
+      "cors_headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Request-Method": "*",
+        "Access-Control-Allow-Methods": "OPTIONS, GET, PUT, POST, DELETE",
+        "Access-Control-Allow-Headers": "*"
+      },
+      "url": "http://localhost:3001",
+      "username": "test",
+      "password": "user"
     },
-    "url": "http://localhost:3001",
-    "username": "test",
-    "password": "user"
-  },
-  "xml_test_api": {
-    "cors_headers": {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Request-Method": "*",
-      "Access-Control-Allow-Methods": "OPTIONS, GET, PUT, POST, DELETE",
-      "Access-Control-Allow-Headers": "*"
-    },
-    "url": "http://localhost:3001",
-    "username": "test",
-    "password": "user"
+    "xml_test_api": {
+      "cors_headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Request-Method": "*",
+        "Access-Control-Allow-Methods": "OPTIONS, GET, PUT, POST, DELETE",
+        "Access-Control-Allow-Headers": "*"
+      },
+      "url": "http://localhost:3001",
+      "username": "test",
+      "password": "user"
+    }
   }
 }

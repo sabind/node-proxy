@@ -4,6 +4,7 @@ var assert = require("assert"),
 
 describe('JSON Proxy', function(){
   var server = require('../fake_json_api.js');
+  var proxy_server = require('../../server.js');
 
   beforeEach(function (done) {
     done();
