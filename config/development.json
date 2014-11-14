@@ -7,9 +7,9 @@
         "Access-Control-Allow-Methods": "OPTIONS, GET, PUT, POST, DELETE",
         "Access-Control-Allow-Headers": "*"
       },
-      "url": "https://api.macserver.theviewahead.com:8443",
-      "username": "adamp",
-      "password": "adamp"
+      "url": "https://server.com:3000/api",
+      "username": "username",
+      "password": "password"
     },
     "json_test_api": {
       "cors_headers": {

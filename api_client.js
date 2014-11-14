@@ -1,8 +1,8 @@
 var SuperAgent = require('superagent'),
     config = require("./config.js");
 
-var api_url = config.get('some_api').url;
-var authentication_64_encode = new Buffer(config.get('some_api').username + ':' + config.get('some_api').password).toString('base64')
+var api_url = config.get('api_list').some_api.url;
+var authentication_64_encode = new Buffer(config.get('api_list').some_api.username + ':' + config.get('api_list').some_api.password).toString('base64')
 
 function get_api(url, headers, callback, error_callback) {
   SuperAgent

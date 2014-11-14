@@ -3,7 +3,7 @@ var http = require("http"),
   api_client = require("./api_client.js"),
   config = require("./config.js");
 
-var cors_headers = config.get('some_api').cors_headers;
+var cors_headers = config.get('api_list').some_api.cors_headers;
 
 // Load up the Proxy Servers
 var api_names = config.get('api_list');
